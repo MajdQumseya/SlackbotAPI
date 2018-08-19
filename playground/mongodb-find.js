@@ -28,11 +28,11 @@ const {MongoClient,ObjectID} = require('mongodb');
             console.log('Unable to count items', err);
         });
     
-        db.collection('Users').find({name: 'Majd Qumseya'}).toArray()
-            .then((res) => {
-                console.log(res);
-            }).catch((err)=> {
-                console.log('Unable to fetch query', err);
-            });
+    db.collection('Users').find({name: 'Majd Qumseya'}).toArray()
+        .then((res) => {
+            console.log(res);
+        }).catch((err)=> {
+            console.log('Unable to fetch query', err);
+        });
     // client.close();
 });
